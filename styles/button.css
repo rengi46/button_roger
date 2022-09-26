@@ -1,0 +1,56 @@
+
+
+.button {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 17rem;
+	height: 4rem;
+	padding: 1.5rem 3.125rem;
+	background-color: #0a1d3f;
+	border: none;
+	border-radius: 0.75rem;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+.button span{
+	color: white;
+	font-size: 1.75rem;
+	font-family: sans-serif;
+	font-weight:  bolder;
+	display: inline-block;
+	z-index: 10;
+}
+.button span img{
+	color: white;
+}
+
+.button::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color:#3c377cf6;
+}
+
+
+.active {
+	background-color: #0a1d3f;
+}
+.active::before {
+	width: 100%;
+	transition: width 1s linear;
+}
+
+.succes{
+	background-color: #2ecc71;
+}
+
+.error{
+	background-color: rgb(211, 40, 40);
+}
