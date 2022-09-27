@@ -6,7 +6,7 @@
 
 dependencias
 ```
-npm install
+npm install --force
 ```
 iniciar proyecto
 ```
@@ -16,9 +16,11 @@ npm run dev
 
 ## 2. Abrir aplicacion
 
-En un navegador de internet, ir a http://localhost:3000
+En un navegador de internet, ir a:
+
+http://localhost:3000
 o
-En vercel con este link
+https://button-roger-re8r.vercel.app/
 
 ## 3. Descripcion del servicio y su arquitectura
 
@@ -30,5 +32,4 @@ En vercel con este link
 
 ## 4. dificultades
 
-+ hacer los tests en react
-+ hacer los test con asyncronia
++ hacer los tests
