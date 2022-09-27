@@ -5,7 +5,7 @@ import arrow from "../../assets/icons/arrowSVG.svg"
 
 
 
-export const Button = ({onClick,status="Submit"}) => {
+export const Button = ({onClick= ()=>{},status="Submit"}) => {
   let style = "button"
   let image
   let conten
@@ -16,16 +16,19 @@ export const Button = ({onClick,status="Submit"}) => {
       image = check.src
       style = style + " succes"
       break;
+
     case "Error":
       conten = "Error "
       image = error.src
       style = style + " error"
       break;
+
     case "Loading":
       conten = "Submit "
       image = arrow.src
       style = style + " active"
       break;
+
     case "Submit":
       conten = "Submit "
       image = arrow.src

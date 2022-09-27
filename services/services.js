@@ -1,5 +1,5 @@
 
-export const randomBool = async () => {
+const randomBool = async () => {
   return new Promise((res,req)=>{
     setTimeout(
       ()=>{
@@ -10,4 +10,4 @@ export const randomBool = async () => {
   })
 }
 
-// module.exports = randomBool;
+export default randomBool

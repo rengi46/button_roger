@@ -1,5 +1,5 @@
 
-import { randomBool } from '../services/services'
+import randomBool from '../services/services'
 import { Button } from '../components/button/Button'
 import React from 'react';
 
